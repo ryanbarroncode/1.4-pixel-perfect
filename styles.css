@@ -9,6 +9,7 @@ h1, h2, h3{
   font-family: 'Oswald', sans-serif;
 }
 
+li{list-style-type: none}
  /*
   * Main Layout
   */
@@ -148,4 +149,33 @@ header h4 {
   margin: 0;
   font-size: 15px;
   letter-spacing: -1px;
+}
+
+
+
+
+.content-left{
+  display: inline-block;
+  float: left;
+  width: 620px;
+  margin-left: 10%
+}
+
+.media-read > li{
+  display: inline-block;
+}
+
+.content-right{
+  display: inline-block;
+  float: right;
+  width: 280px;
+  margin-right: 10%;
+}
+
+.author-info{
+  display-block;
+}
+
+.sm-links > li{
+  display:inline-block;
 }
