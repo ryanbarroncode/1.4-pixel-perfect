@@ -185,17 +185,32 @@ header h4 {
 }
 
 .content-right{
-  display: inline-block;
+  display: block;
   float: right;
   width: 280px;
   margin-right: 10%;
 }
+
+div > p > ad{
+  line-height: 50px;
+}
+
 .ad-text{
   width: 280px;
 }
 
 .author-info{
   display-block;
+}
+
+.author-image{
+  text-align: center;
+}
+
+/*.author-info > img{
+  position: relative;
+  top: 20px;
+  left: 105px;*/
 }
 
 .sm-links > li{
@@ -211,18 +226,38 @@ display: inline-block;
   font-size: 35px;
 }
 
-.popular-posts > li {
+
+/*.popular-posts > a {
+  position: relative;
+  top: 100px;
   display: inline-block;
   width: 25%;
   float: left;
+}*/
+
+a > span{
+  position: relative;
+  top: 260px;
+  left: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  color: #FFFFFF;
+    text-decoration: none
 }
 
-.popular-posts > li > a {
-  display: block;
+
+
+.popular-posts > a {
+  display: inline-block;
   height: 330px;
-
+  width: 25%;
+  float: left;
   background: url('https://unsplash.it/325/330') no-repeat;
+  color: #FFFFFF;
+    text-decoration: none
 }
+
+
 
 /*.picbar{
   position:absolute;
