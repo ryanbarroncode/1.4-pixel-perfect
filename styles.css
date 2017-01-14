@@ -290,30 +290,39 @@ color: white;
 /*.media-read > i{
   text-decoration: none;
   background-color:
-}*/*/
+}*/
 
 .content-right{
-  display: block;
-  float: right;
+  display: inline-block;
+  /*float: right;*/
   width: 280px;
-  margin-right: 10%;
-}
-
-div > p > ad{
-  line-height: 50px;
+  margin-left: 20px;
 }
 
 .ad-text{
   width: 280px;
+  line-height: 32px;
 }
 
+.ad{
+  position: relative;
+  left: 188px;
+  bottom: 17px;
+}
+.ad > p > a{
+  list-style-type: none;
+}
 .author-info{
   display-block;
 }
 
 .author-image{
   text-align: center;
-}
+  }
+
+  .post-time{
+
+  }
 
 /*.author-info > img{
   position: relative;
@@ -350,7 +359,7 @@ display: inline-block;
   font-weight: bold;
   font-size: 25px;
   color: #FFFFFF;
-    text-decoration: none
+  text-decoration: none
 }
 
 
@@ -362,7 +371,11 @@ display: inline-block;
   float: left;
   background: url('https://unsplash.it/325/330') no-repeat;
   color: #FFFFFF;
-    text-decoration: none
+  text-decoration: none
+}
+
+{
+
 }
 
 popular-posts::a>before{
@@ -378,6 +391,7 @@ popular-posts::a>before{
 footer{
   background-color: #0B3551;
   color: #AAB9C4;
+  margin-top: 5px;
 }
 .navbarbottom{
   display: inline-block;
@@ -392,12 +406,15 @@ footer{
   display: inline-block;
   position: relative;
   top: 30px;
-  width: 120px;
+  right: 20px;
+  width: 80px;
   color: white;
   text-decoration: none;
   margin: 0;
   padding: 0;
   float: right;
+  border-right: 2px solid lightgrey;
+  margin-left: 10px;
 }
 
 h5{
