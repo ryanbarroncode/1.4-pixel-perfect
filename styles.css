@@ -383,7 +383,6 @@ footer{
   display: inline-block;
   width: 1300px;
   height: 100px;
-
 }
 
 
@@ -401,6 +400,15 @@ footer{
   float: right;
 }
 
+h5{
+  position:relative;
+  bottom: 65px;
+  left: 230px;
+}
+.ironyard{
+  position: relative;
+  left: 160px;
+}
 
 
 
