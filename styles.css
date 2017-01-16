@@ -210,87 +210,6 @@ header h4 {
   background-color: #163450;
   padding: 8px;
 }
-/*.share a{
-  text-decoration: none;
-  color: white;
-}
-.share ul:hover{
-  color: #A6B2BD;
-}*/
-
-/*.rss li{
-display: inline-block;
-list-style: none;
-
-}
-
-.rrs a{
-
-}
-.rrs span{
-  padding: 7px 10px 5px 10px;
-  color: white;
-  background-color: #A3B3BE;
-}
-
-.rss span :hover{
-  background-color: blue;
-}
-
-.rrs i{
-padding: 7px;
-background-color: #5E686F;
-color: white;
-}
-.rrs li{
-  display: inline;
-  text-decoration: none;
-  color: white;
-}
-
-.rrs a{
-  text-decoration: none;
-  color: white;
-}*/
-
-/*.links3  li{
-  position: relative;
-  display: inline-block;
-  text-decoration: none;
-  font-size: 20px;
-  font
-  display: inline-block;
-  background-color: #A6B2BD;
-  color: white;
-  margin: 0;
-  padding-left: 8px;
-}*/
-
-/*.readbox1{
-  display: inline-block;
-}
-.readbox a{
-  text-decoration: none;
-  color: white;
-}
-.readbox1 a:hover{
-  background-color: #326CAE;
-}
-.readbox2{
-  display: inline-block;
-}
-.readbox2 a:hover{
-  background-color: #326CAE;
-}
-.readbox3{
-  display: inline-block;
-}
-.readbox3 a:hover{
-  background-color: #326CAE;}
-/*.media-read > i{
-  text-decoration: none;
-  background-color:
-}*/
 
 .content-right{
   display: inline-block;
@@ -333,24 +252,12 @@ color: white;
 .sm-links > li{
   display:inline-block;
 }
-/* total width 1300 height 330
-img > footer{
-display: inline-block;
-}*/
+
 
 .popular-posts-section > h1 {
   text-align: center;
   font-size: 35px;
 }
-
-
-/*.popular-posts > a {
-  position: relative;
-  top: 100px;
-  display: inline-block;
-  width: 25%;
-  float: left;
-}*/
 
 .popular-posts >a > span{
   position: relative;
@@ -378,7 +285,7 @@ display: inline-block;
 
 }
 
-popular-posts::a>before{
+.navbarbottom::a>before{
   content: '';
   display: block;
   position: absolute;
@@ -391,7 +298,6 @@ popular-posts::a>before{
 footer{
   background-color: #0B3551;
   color: #AAB9C4;
-  margin-top: 5px;
 }
 .navbarbottom{
   display: inline-block;
@@ -408,17 +314,18 @@ footer{
   top: 30px;
   right: 20px;
   width: 80px;
-  color: white;
+  color: #A3B3BE;
   text-decoration: none;
   margin: 0;
   padding: 0;
   float: right;
-  border-right: 2px solid lightgrey;
+  border-right: 1px solid #A3B3BE;
   margin-left: 10px;
 }
 
 h5{
   position:relative;
+  width: 400px;
   bottom: 65px;
   left: 230px;
 }
