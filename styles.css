@@ -24,7 +24,7 @@ li{list-style-type: none}
 
 header{
   position: relative; /* for absolute children */
-  background: #FFF url('http://www.stevensegallery.com/1200/800') no-repeat;
+  background: #FFF url('images/surf.jpg') no-repeat;
   background-size: cover;
   height: 523px;
 }
@@ -285,7 +285,7 @@ header h4 {
 
 }
 
-.navbarbottom::a>before{
+/*.navbarbottom::a>before{
   content: '';
   display: block;
   position: absolute;
@@ -294,7 +294,7 @@ header h4 {
   left: 0;
   right: 0;
   background-color: rgba(28, 107, 174, 0.5);
-}
+}*/
 footer{
   background-color: #0B3551;
   color: #AAB9C4;
