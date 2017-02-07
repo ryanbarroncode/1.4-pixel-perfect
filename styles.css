@@ -376,6 +376,9 @@ footer{
 
 
 
+.fcl:hover{
+  color: black;
+}
 
 .fcl{
   display: inline-block;
