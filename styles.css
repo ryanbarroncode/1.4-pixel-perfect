@@ -2,31 +2,32 @@
  * General typography and color pallet
  */
 body{
-  font-family: 'Open Sans', helvetica, sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  /* font-size: 0; Fixes Spacing*/
 }
 
-/*a{
-  text-decoration: none;
-}*/
-
-h1, h2, h3{
+h1, h2, h3, h5{
   font-family: 'Oswald', sans-serif;
 }
 
-li{list-style-type: none}
+img {
+  max-width: 100%
+}
+
  /*
   * Main Layout
   */
 .container{
-  width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
 header{
   position: relative; /* for absolute children */
-  background: #FFF url('https://drscdn.500px.org/photo/92795009/m=2048/95b7d08287d552a8036acfd85d855b0c') no-repeat;
+  background: #FFF url('https://unsplash.it/1300/523') no-repeat;
   background-size: cover;
   height: 523px;
+  margin-bottom: 68px;
 }
 
 header::before{
@@ -75,6 +76,8 @@ nav::after {
   letter-spacing: .2px;
   position: relative;
   top: -1px;
+  margin-left: 9px;
+  margin-top: 13px;
 }
 
 .branding h2 > span {
@@ -92,11 +95,20 @@ nav::after {
   vertical-align: middle;
 }
 
+.Sp-logo {
+  overflow: hidden;
+  border-radius: 22.5px;
+  border: 1px solid transparent;
+  margin-top: 2px;
+  margin-left: 2px;
+}
+
 .header-links {
   float: right;
   list-style: none;
   padding: 0;
-  margin: 16px 0 0 0;
+  margin-right: 35px;
+  margin-top: 19px;
 }
 
 .header-links li {
@@ -124,11 +136,11 @@ nav::after {
   vertical-align: middle;
 }
 
-.header-links li img {
-  margin-left: 4px;
-  position: relative;
-  top: 1px;
-  right: 3px;
+.magnifyplacer{
+  display: inline-block;
+  position: absolute;
+  top: 22px;
+  right: 50px;
 }
 
 header h1,
@@ -141,7 +153,7 @@ header h1 {
   text-shadow: 0 2px 4px rgba(17, 52, 79, 1);
   text-transform: uppercase;
   margin: 150px 0 0 0;
-
+  font-family: 'Open Sans';
   font-size: 104px;
   line-height: 104px;
   font-weight: 400;
@@ -155,259 +167,460 @@ header h4 {
   letter-spacing: -1px;
 }
 
-
-
-.container2{
-  display: block;
-  border-bottom: 1px solid red;
-  width: 1300px;
-  overflow: auto;
-}
-.content-left{
+/* column-1 info */
+.column-1{
   display: inline-block;
-  float: left;
-  width: 620px;
-  margin-left: 10%
+  width: 47%;
+  margin-left: 12%;
+  margin-right: 3%;
+  color: #5E686E;
 }
 
-.rad{
-  font-size: 34px;
-  color: blue;
-  border-left: 2px solid grey;
-  margin-left: 0px;
-  padding-left: 70px;
-}
-
-.inner-content-left{
-  line-height: 28px;
-}
-
-.engaging{
-  font-size: 45px;
-}
-
-.rss li{
+h5 {
+  text-transform: uppercase;
+  font-size: 60px;
+  margin: 0;
+  margin-top: -5px;
+  margin-bottom: 7px;
+  padding-left: 8px;
+  color: #093450;
   display: inline-block;
-  list-style: none;
-  font-family: 'open sans', helvetica, sans-serif;
-  color: white;
-  background-color: #A6B2BD;
-  padding: 0px;
-  padding-right: 10px;
-  margin-left: 12px;
 }
 
-.rss a{
-  text-decoration: none;
-  color: white;
+.column-1 > p{
+  padding-left: 5px;
+  padding-top: 5px;
+}
+p{
+  line-height: 165%;
 }
 
-.rss span:hover{
-  background-color: #326CAE;
+.authortiny{
+  height: 22px;
+  border-radius: 11px;
   overflow: hidden;
-  padding: 8px 12px 6px 8px;
-  padding-right: 12px;
 }
 
-.rss li i{
-  background-color: #163450;
-  padding: 8px;
+.byline {
+  margin-bottom: 33px;
+  margin-left: 10.5px;
+  color: #BAC6CE;
+  font-size: 12.5px;
 }
 
-.content-right{
+.byline a{
+  text-decoration: none;
+  color: #4785B8;
+  font-size: 12px;
+  margin-left: 5px;
+  margin-right: 15px;
+}
+
+.timestamp{
+  text-decoration: underline;
+  font-size: 13.5px;
+}
+
+.pull-quote{
+  padding: 4px;
+  border-left: 2px solid #D3D3D3;
+  font-size: larger;
+  margin-top: 20px;
+  margin-left: 13px;
+  padding-bottom: 9px;
+  padding-top: 16px;
+  margin-bottom: 23px;
+}
+.pull-quote span{
+  text-transform: uppercase;
+  font-size: 27px;
+  color: #146EAE;
+}
+/* http://www.w3schools.com/css/css_link.asp */
+p > a:link {
+  color: #146EAE;
+}
+
+p > a:visited {
+  color: #A3B3BE;
+}
+
+.article-links{
+  position: relative;
   display: inline-block;
-  /*float: right;*/
-  width: 280px;
-  margin-left: 20px;
-}
-.tfi a{
-  text-decoration: none;
-}
-.ad-text{
-  width: 280px;
-  line-height: 32px;
-}
-.ad a{
-  text-decoration: none;
-  font-size: 10px;
-  font-weight: bold;
-  color: grey
-}
-
-.ad{
-  position: relative;
-  left: 188px;
-  bottom: 17px;
-}
-.ad > p > a{
-  list-style-type: none;
-}
-.author-info{
-  display-block;
-  font-size: 22px;
-}
-
-.author-image{
-  text-align: center;
-  }
-
-  .post-time{
-
-  }
-
-/*.author-info > img{
-  position: relative;
-  top: 20px;
-  left: 105px;*/
-}
-
-.sm-links > li{
-  display:inline-block;
-}
-/*
-*Popular post overlays
-*/
-
-.most-popular-posts{
+  height: 40px;
+  width:100%;
   font-size: 0;
-  text-align: center;
+  margin-top: 3px;
+  margin-left: 7px;
 }
 
-.most-popular-posts h2{
-  font-size: 20px;
-}
-
-.popular-post{
-  position: relative; /* child elements absolute*/
+.article-links > div{
+  font-size: 13px;
   display: inline-block;
-  height: 330px;
-  width: 325px; /* 325px */
+  margin: 5px;
+  color: #FFF;
+
+  /*padding: 10px 14px 10px 14px; */
 }
 
-/*this is the overlay,*/
-.popular-post::before{
+.article-links div a{
+  display: inline-block;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 13px;
+}
+
+.readcomments{
+  display: inline-block;
+  width: 155px;
+  background-color: #A3B3BE;
+  max-height: 30px;
+}
+
+.readcomments:hover{
+  background-color: #146EAE;
+}
+
+.readlater:hover{
+  background-color: #146EAE;
+}
+
+.sharestory:hover{
+  background-color: #146EAE;
+}
+
+.linkicon:hover {
+  background-color: #093450;
+}
+
+.readcomments > a{
+  position: relative;
+}
+
+.linkicon{
+  position: relative;
+  height: 30px;
+  width: 33px;
+  background-color: #5E686E;
+}
+
+
+.linkicon > span{
+  position: absolute;;
+  display: inline-block;
+  left: 44px;
+  top: 8px;
+  width: 350%;
+}
+
+.iconplacer{
+  position:absolute;
+  font-size: 15px;
+  padding-top:6px;
+  padding-left: 10px;
+}
+
+.readlater{
+  width: 125px;
+  background-color: #A3B3BE;
+  max-height: 30px;
+}
+
+.sharestory{
+  width: 151px;
+  background-color: #A3B3BE;
+  max-height: 30px;
+}
+
+/*{
+  background color: #146EAE;
+}
+/* #146EAE - color for hover */
+
+/******* column2 info ********/
+
+.column-2{
+  position: absolute;
+  display: inline-block;
+  width: 21%;
+  max-width: 278px;
+  margin-right: 12%;
+  margin-left: 4%;
+}
+
+.photoholder{
+  position: relative;
+  margin-top: 14px;
+  margin-left: 5px;
+}
+.author-photo{
+  position: relative;
+  display: block;
+  border-radius: 42px;
+  overflow: hidden;
+  margin-left: 33%;
+  margin-bottom: 15px;
+}
+
+.photoholder::after{
   content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 33%;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.3);
+  border-radius: 42px;
+  max-width: 84px;
+}
+
+.photoholder:hover::after{
+  display: none;
+}
+
+.authorname{
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  color: #0057A6;
+  margin-bottom: 8px;
+}
+
+.sociallinks{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  color: #ADBCC5;
+  padding: 0;
+  margin-bottom: 50px;
+}
+
+.sociallinks > a{
+  color: #A3B3BE;
+  text-decoration: none;
+}
+
+.adholder{
+  position: relative;
+  max-height: 300px;
+}
+
+.advertisement > img{
+  height: 100%;
+}
+
+.adholder::after{
+  content: '';
+  display: inline-block;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
-  transition: background-color 1s;
+  background-color: rgba(28, 107, 174, 0.3);
+  max-height: 300px;
 }
 
-.popular-post:hover::before{
-  background-color: rgba(0, 0, 0, 0);
+.adholder:hover::after{
+  display: none;
 }
 
-.popular-post:hover h3{
-  color: #000000;
+.ad-info{
+  color: #A3B3BE;
+  float: right;
 }
 
-.popular-post h3{
-  position: absolute;
-  text-align: 100%;
-  bottom: 0;
-  font-size: 20px;
-  color: #FFFFFF;
-
+.ad-info::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.popular-post img{
-  max-width: 100%;
-}
-/*.popular-posts-section > h1 {
-  text-align: center;
-  font-size: 35px;
+h6 {
+  text-transform: uppercase;
+  color: #146EAE;
+  text-align: left;
+  font-family: 'Oswald';
+  font-size: 18px;
+  margin-top: 66px;
+  margin-bottom: 4px;
+  margin-left: 2px;
 }
 
-.popular-posts >a > span{
+.sidebar{
+
+  color: #C2CCD3;
+  margin-top: 7px;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Footer Section */
+footer{
   position: relative;
-  top: 260px;
-  left: 20px;
-  font-weight: bold;
-  font-size: 25px;
-  color: #FFFFFF;
-  text-decoration: none
+  margin-top: 63px;
+  padding-top: 36px;
+  border-top: 1px solid #E1E7EA;
+  font-size: 0; /*for picture space #delete*/
 }
 
-
-
-.popular-posts > a {
+.pastlinks > a{
+  color:#093450;
+  text-decoration: none;
+  font-size: 30px;
   display: inline-block;
   height: 330px;
   width: 25%;
-  float: left;
-  background: url('https://unsplash.it/325/330') no-repeat;
-  color: #FFFFFF;
-  text-decoration: none
-}
-
-{
+  background: url('https://unsplash.it/325/330');
+  background-size: cover;
 
 }
 
-.popular-posts a > span::before{
+h3{
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 0px;
+  margin-bottom: 41px;
+  color: #093450;
+  letter-spacing: 1.5px;
+}
+
+.article-other{
+  font-family: 'Oswald';
+  position: absolute;
+  bottom: 0px;
+  min-width: 23.6%;
+  max-width: 23.6%;
+  text-transform: uppercase;
+  padding-left: 17px;
+  padding-bottom: 11px;
+  padding-top: 285px;
+}
+
+.article-other:hover{
+  color: #FFF;
+}
+
+.pastlinks{
+  position: relative;
+}
+/* - to work on bottom titles*/
+.articlelink1::after{
   content: '';
-  display: block;
-  position: ;
+  display: inline-block;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(28, 107, 174, 0.5);
+  background-color: rgba(28, 107, 174, 0.3);
+  max-width: 25%;
 }
 
-.popular-posts:hover{
-  background-color: #326CAE;
-  /*overflow: hidden;
-  padding: 8px 12px 6px 8px;
-  padding-right: 12px;*/} */
-
-footer{
-  background-color: #0B3551;
-  color: #AAB9C4;
-}
-.navbarbottom{
+.articlelink2::after{
+  content: '';
   display: inline-block;
-  width: 1300px;
-  height: 100px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 25%;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.3);
+  max-width: 25%;
+}
+
+.articlelink3::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.3);
+  max-width: 25%;
+}
+
+.articlelink4::after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 75%;
+  right: 0;
+  background-color: rgba(28, 107, 174, 0.3);
+  max-width: 25%;
+}
+
+
+.articlelink1:hover::after{
+  display: none;
+}
+
+.articlelink2:hover::after{
+  display: none;
+}
+
+.articlelink3:hover::after{
+  display: none;
+}
+
+.articlelink4:hover::after{
+  display: none;
+}
+/*bottombar info */
+
+.bottombar{
+  position: relative;
+  display: inline-block;
+  max-height: 97px;
+  min-height: 97px;
+  width: 100%;
+  max-width: 988px;
+  background-color: #093450;
+  padding-left: 12%;
+  padding-right: 12%;
+  margin: 0px;
+}
+
+.copyright{
+  color: #A3B3BE;
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  bottom: 9px;
+  margin-top: 26px;
+}
+
+.copyright > img{
+  position: relative;
+  top: 13px;
+  margin-right: 10px;
 }
 
 
 
-.fcl:hover{
-  color: black;
-}
-
-.fcl{
+.navbottom{
+  float: right;
   display: inline-block;
   position: relative;
-  top: 30px;
-  right: 20px;
-  width: 80px;
+  font-size: 13px;
+  top: 15px;
+  margin-top: 26px;
+}
+
+.navbottom > a{
   color: #A3B3BE;
   text-decoration: none;
-  margin: 0;
-  padding: 0;
-  float: right;
-  border-right: 1px solid #A3B3BE;
-  margin-left: 10px;
+  border-right: 1px solid #5E686E;
+  padding-right: 8px;
+  padding-left: 3px;
 }
 
-h5{
-  position:relative;
-  width: 400px;
-  bottom: 65px;
-  left: 230px;
+.navbottom > .navlast{
+  border-right: 0px;
 }
-.ironyard{
-  position: relative;
-  left: 160px;
-}
-
-
-
-/*.picbar{
-  position:absolute;
-}*/
